@@ -18,12 +18,27 @@ body {
 
 .app-container {
     min-width: 340px;
-    min-height: 500px;
+    min-height: fit-content;
     display: flex;
     flex-direction: column;
     background-color: white;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    position: relative;
+    overflow: hidden;
+}
+
+.circle {
+    width: 200%;
+    height: 60%;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #d977f9;
+    opacity: 0.1;
+    border-bottom-left-radius: 1000px;
+    border-bottom-right-radius: 1000px;
 }
 
 .header {
@@ -51,7 +66,7 @@ body {
     width: 100px;
     height: 100px;
     border-radius: 1000px;
-}
+    box-shadow: rgba(17, 12, 46, 0.3) 0px 48px 100px 0px;}
 
 .user-info {
     width: fit-content;
@@ -80,7 +95,7 @@ body {
     background: rgb(213,0,255);
     background: linear-gradient(90deg, rgba(213,0,255,1) 0%, rgba(179,17,190,1) 39%, rgba(167,20,215,1) 100%);
     color: white;
-}
+    box-shadow: rgba(17, 12, 46, 0.3) 0px 48px 100px 0px;}
 
 .social-links-container {
     width: 100%;
